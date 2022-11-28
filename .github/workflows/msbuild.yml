@@ -34,3 +34,11 @@ jobs:
         input: './VS2019/VS2019/Security/Security.sln'
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
         commandLinePattern: '${cpptestcli} -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
+
+    # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
+    - name: Upload results (SARIF)
+      if: always()
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: reports/report.sarif
+        
