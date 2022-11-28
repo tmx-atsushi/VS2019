@@ -32,9 +32,8 @@ jobs:
       uses: parasoft/run-cpptest-action@1.0.1
       with:
         input: './Security/Security.sln'
-        cli: 'C:/Program Files (x86)/Parasoft/C++test for Visual Studio/10.5/cpptestcli.exe'
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
-        commandLinePattern: '${cli} -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
+        commandLinePattern: 'C:/Program Files (x86)/Parasoft/C++test for Visual Studio/10.5/cpptestcli.exe -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
