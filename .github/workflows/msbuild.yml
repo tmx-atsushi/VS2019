@@ -33,7 +33,8 @@ jobs:
       with:
         input: './Security/Security.sln'
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
-        commandLinePattern: '"C:/Program Files (x86)/Parasoft/C++test for Visual Studio/10.5/cpptestcli.exe" -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
+        reportFormat: 'sarif'
+        commandLinePattern: '"C:/Program Files (x86)/Parasoft/C++test for Visual Studio/10.5/cpptestcli.exe" -config "${testConfig}" -solution "${input}" -report "${reportDir}" -property report.format=${reportFormat} -nobuild'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
