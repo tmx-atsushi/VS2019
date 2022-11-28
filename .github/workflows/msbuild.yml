@@ -32,3 +32,4 @@ jobs:
       uses: parasoft/run-cpptest-action@1.0.1
       with:
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
+        input: 'Security.sln'
