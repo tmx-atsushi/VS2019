@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2019
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Security", "Security.vcxproj", "{D164F36E-9ABA-4D92-B43C-1D391E3468EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D164F36E-9ABA-4D92-B43C-1D391E3468EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D164F36E-9ABA-4D92-B43C-1D391E3468EA}.Debug|Win32.Build.0 = Debug|Win32
+		{D164F36E-9ABA-4D92-B43C-1D391E3468EA}.Release|Win32.ActiveCfg = Release|Win32
+		{D164F36E-9ABA-4D92-B43C-1D391E3468EA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
