@@ -31,7 +31,7 @@ jobs:
     - name: Run Parasoft C/C++test
       uses: parasoft/run-cpptest-action@1.0.1
       with:
-        input: './VS2019/VS2019/Security/Security.sln'
+        input: './Security/Security.sln'
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
         commandLinePattern: '${cpptestcli} -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
 
