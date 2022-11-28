@@ -33,4 +33,4 @@ jobs:
       with:
         input: 'Security/Security.sln'
         testConfig: 'builtin://CWE Top 25 + On the Cusp 2019'
-        commandLinePattern: '${cpptestcli} -config "${testConfig}" -solution "${env.SOLUTION_FILE_PATH}" -report "${reportDir}" -nobuild'
+        commandLinePattern: '${cpptestcli} -config "${testConfig}" -solution "${input}" -report "${reportDir}" -nobuild'
