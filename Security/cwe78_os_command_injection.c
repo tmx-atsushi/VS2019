@@ -1,3 +1,5 @@
+// Dummy change for Bugspots
+
 #include "config.h"
 
 #define USERNAME_MAX 32

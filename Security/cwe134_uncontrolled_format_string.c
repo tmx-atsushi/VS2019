@@ -1,3 +1,5 @@
+// Dummy change for Bugspots
+
 #include "config.h"
 
 #define MAGIC_MIN_LENGTH 12
